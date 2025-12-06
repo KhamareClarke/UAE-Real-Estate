@@ -437,13 +437,13 @@ export default function EliteHero() {
                   animation: 'shimmer 8s linear infinite' // Slowed from default 2s to 8s
                 }} />
                 
-                <div className="relative p-8">
+                <div className="relative p-8 lg:p-6">
                   {!showSuccess ? (
                     <>
-                      <div className="space-y-3 mb-8">
-                        <div className="space-y-3 text-center">
+                      <div className="space-y-3 mb-8 lg:mb-5">
+                        <div className="space-y-3 lg:space-y-2 text-center">
                           <motion.h3
-                            className="text-4xl sm:text-3xl font-black leading-tight tracking-tight"
+                            className="text-4xl sm:text-3xl lg:text-2xl font-black leading-tight tracking-tight"
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.7, duration: 1.5 }}
@@ -452,7 +452,7 @@ export default function EliteHero() {
                             Private Investment Review
                           </motion.h3>
                           <motion.p
-                            className="text-xl sm:text-lg font-semibold leading-relaxed tracking-wide text-white"
+                            className="text-xl sm:text-lg lg:text-base font-semibold leading-relaxed tracking-wide text-white"
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.8, duration: 1.5 }}
@@ -461,7 +461,7 @@ export default function EliteHero() {
                             A confidential review designed to assess:
                           </motion.p>
                           <motion.div
-                            className="text-lg sm:text-base text-white flex items-center justify-center flex-wrap gap-x-2 gap-y-1 px-4 py-2.5 bg-white/5 rounded-lg border border-white/10 mx-auto"
+                            className="text-lg sm:text-base lg:text-sm text-white flex items-center justify-center flex-wrap gap-x-2 gap-y-1 px-4 py-2.5 lg:py-2 bg-white/5 rounded-lg border border-white/10 mx-auto"
                             style={{ textShadow: '0 2px 6px rgba(0,0,0,0.8)' }}
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
@@ -475,23 +475,23 @@ export default function EliteHero() {
                             <span className="font-semibold">Preferred jurisdiction</span>
                           </motion.div>
                           <motion.div
-                            className="space-y-1.5 pt-1"
+                            className="space-y-1.5 lg:space-y-1 pt-1"
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 1.0, duration: 1.5 }}
                           >
-                            <p className="text-lg sm:text-base text-white font-semibold" style={{ fontFamily: 'Georgia, serif', textShadow: '0 2px 6px rgba(0,0,0,0.8)' }}>
+                            <p className="text-lg sm:text-base lg:text-sm text-white font-semibold" style={{ fontFamily: 'Georgia, serif', textShadow: '0 2px 6px rgba(0,0,0,0.8)' }}>
                               Handled directly by a senior RERA-licensed advisor.
                             </p>
-                            <p className="text-base sm:text-sm text-white italic font-medium" style={{ fontFamily: 'Georgia, serif', textShadow: '0 2px 6px rgba(0,0,0,0.8)' }}>
+                            <p className="text-base sm:text-sm lg:text-xs text-white italic font-medium" style={{ fontFamily: 'Georgia, serif', textShadow: '0 2px 6px rgba(0,0,0,0.8)' }}>
                               No obligation. No pressure.
                             </p>
                           </motion.div>
                         </div>
                       </div>
 
-                      <form onSubmit={handleSubmit} className="space-y-4">
-                        <div className="space-y-4">
+                      <form onSubmit={handleSubmit} className="space-y-4 lg:space-y-3">
+                        <div className="space-y-4 lg:space-y-3">
                           <motion.div
                             initial={{ opacity: 0, y: 10 }} // Subtle movement
                             animate={{ opacity: 1, y: 0 }}
@@ -502,7 +502,7 @@ export default function EliteHero() {
                               placeholder="Full Name"
                               value={formData.name}
                               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                              className={`w-full px-4 sm:px-5 py-3 sm:py-4 border ${errors.name ? 'border-red-400' : 'border-white/40 md:border-white/30'} rounded-xl bg-white/20 md:bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/25 md:focus:bg-white/15 text-white font-semibold text-base placeholder-white/80 md:placeholder-white/60 transition-all shadow-lg min-h-[44px]`}
+                              className={`w-full px-4 sm:px-5 lg:px-4 py-3 sm:py-4 lg:py-3 border ${errors.name ? 'border-red-400' : 'border-white/40 md:border-white/30'} rounded-xl bg-white/20 md:bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/25 md:focus:bg-white/15 text-white font-semibold text-base placeholder-white/80 md:placeholder-white/60 transition-all shadow-lg min-h-[44px]`}
                             />
                             {errors.name && <p className="text-red-400 text-xs mt-2 font-semibold">{errors.name}</p>}
                           </motion.div>
@@ -517,7 +517,7 @@ export default function EliteHero() {
                               placeholder="Email Address"
                               value={formData.email}
                               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                              className={`w-full px-4 sm:px-5 py-3 sm:py-4 border ${errors.email ? 'border-red-400' : 'border-white/30'} rounded-xl bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/15 text-white font-medium text-base placeholder-white/60 transition-all shadow-lg min-h-[44px]`}
+                              className={`w-full px-4 sm:px-5 lg:px-4 py-3 sm:py-4 lg:py-3 border ${errors.email ? 'border-red-400' : 'border-white/30'} rounded-xl bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/15 text-white font-medium text-base placeholder-white/60 transition-all shadow-lg min-h-[44px]`}
                             />
                             {errors.email && <p className="text-red-400 text-xs mt-2 font-semibold">{errors.email}</p>}
                           </motion.div>
@@ -532,7 +532,7 @@ export default function EliteHero() {
                               placeholder="WhatsApp Number (with country code)"
                               value={formData.whatsapp}
                               onChange={(e) => setFormData({ ...formData, whatsapp: e.target.value })}
-                              className={`w-full px-4 sm:px-5 py-3 sm:py-4 border ${errors.whatsapp ? 'border-red-400' : 'border-white/40 md:border-white/30'} rounded-xl bg-white/20 md:bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/25 md:focus:bg-white/15 text-white font-semibold text-base placeholder-white/80 md:placeholder-white/60 transition-all shadow-lg min-h-[44px]`}
+                              className={`w-full px-4 sm:px-5 lg:px-4 py-3 sm:py-4 lg:py-3 border ${errors.whatsapp ? 'border-red-400' : 'border-white/40 md:border-white/30'} rounded-xl bg-white/20 md:bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/25 md:focus:bg-white/15 text-white font-semibold text-base placeholder-white/80 md:placeholder-white/60 transition-all shadow-lg min-h-[44px]`}
                             />
                             {errors.whatsapp && <p className="text-red-400 text-xs mt-2 font-semibold">{errors.whatsapp}</p>}
                           </motion.div>
@@ -545,7 +545,7 @@ export default function EliteHero() {
                             <select
                               value={formData.investmentRange}
                               onChange={(e) => setFormData({ ...formData, investmentRange: e.target.value })}
-                              className={`w-full px-4 sm:px-5 py-3 sm:py-4 border ${errors.investmentRange ? 'border-red-400' : 'border-white/40 md:border-white/30'} rounded-xl bg-white/20 md:bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/25 md:focus:bg-white/15 text-white font-semibold text-base transition-all shadow-lg min-h-[44px]`}
+                              className={`w-full px-4 sm:px-5 lg:px-4 py-3 sm:py-4 lg:py-3 border ${errors.investmentRange ? 'border-red-400' : 'border-white/40 md:border-white/30'} rounded-xl bg-white/20 md:bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/25 md:focus:bg-white/15 text-white font-semibold text-base transition-all shadow-lg min-h-[44px]`}
                             >
                               <option value="" className="bg-navy-900 text-white">Indicative Investment Range</option>
                               <option value="500k-1m" className="bg-navy-900 text-white">AED 500K - 1M</option>
@@ -564,7 +564,7 @@ export default function EliteHero() {
                             <select
                               value={formData.preferredProject}
                               onChange={(e) => setFormData({ ...formData, preferredProject: e.target.value })}
-                              className={`w-full px-4 sm:px-5 py-3 sm:py-4 border ${errors.preferredProject ? 'border-red-400' : 'border-white/40 md:border-white/30'} rounded-xl bg-white/20 md:bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/25 md:focus:bg-white/15 text-white font-semibold text-base transition-all shadow-lg min-h-[44px]`}
+                              className={`w-full px-4 sm:px-5 lg:px-4 py-3 sm:py-4 lg:py-3 border ${errors.preferredProject ? 'border-red-400' : 'border-white/40 md:border-white/30'} rounded-xl bg-white/20 md:bg-white/10 backdrop-blur-md focus:outline-none focus:border-primary-400 focus:bg-white/25 md:focus:bg-white/15 text-white font-semibold text-base transition-all shadow-lg min-h-[44px]`}
                             >
                               <option value="" className="bg-navy-900 text-white">Jurisdiction Preference (Abu Dhabi • Dubai • Both)</option>
                               <option value="abu-dhabi" className="bg-navy-900 text-white">Abu Dhabi</option>
