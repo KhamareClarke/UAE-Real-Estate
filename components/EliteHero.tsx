@@ -293,7 +293,7 @@ export default function EliteHero() {
                       className="space-y-4 sm:space-y-6"
                     >
                       <motion.h1 
-                        className="text-3xl xs:text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight text-cinematic" 
+                        className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-cinematic" 
                         style={{ 
                           background: 'linear-gradient(135deg, #FFFFFF 0%, #FFD700 50%, #FFFFFF 100%)', 
                           WebkitBackgroundClip: 'text', 
@@ -306,7 +306,7 @@ export default function EliteHero() {
                       </motion.h1>
 
                       <motion.p
-                        className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 tracking-wide text-white px-4 sm:px-0"
+                        className="text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 tracking-wide text-white px-4 sm:px-0"
                         style={{ 
                           fontFamily: 'Georgia, serif', 
                           wordSpacing: '0.1em', 
