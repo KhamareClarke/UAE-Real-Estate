@@ -262,14 +262,14 @@ export default function EliteHero() {
             
             {/* Left Column - Content */}
             <motion.div
-              className="space-y-5 sm:space-y-6 lg:space-y-8 text-center lg:text-left lg:-mt-16 xl:-mt-24"
+              className="space-y-5 sm:space-y-6 lg:space-y-5 text-center lg:text-left lg:-mt-16 xl:-mt-24"
               variants={containerVariants}
               initial="hidden"
               animate="visible"
             >
               
               {/* Rotating Text Carousel */}
-              <div className="space-y-3 sm:space-y-4 lg:space-y-5 min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[400px] flex flex-col justify-center">
+              <div className="space-y-3 sm:space-y-4 lg:space-y-3 min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[320px] flex flex-col justify-center">
                 <motion.div 
                   variants={itemVariants}
                   className="relative overflow-hidden"
@@ -290,10 +290,10 @@ export default function EliteHero() {
                         duration: 0.8,
                         ease: [0.22, 1, 0.36, 1]
                       }}
-                      className="space-y-4 sm:space-y-6"
+                      className="space-y-4 sm:space-y-6 lg:space-y-3"
                     >
                       <motion.h1 
-                        className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight text-cinematic" 
+                        className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black leading-tight tracking-tight text-cinematic" 
                         style={{ 
                           background: 'linear-gradient(135deg, #FFFFFF 0%, #FFD700 50%, #FFFFFF 100%)', 
                           WebkitBackgroundClip: 'text', 
@@ -306,7 +306,7 @@ export default function EliteHero() {
                       </motion.h1>
 
                       <motion.p
-                        className="text-base sm:text-lg md:text-xl lg:text-2xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 tracking-wide text-white px-4 sm:px-0"
+                        className="text-base sm:text-lg md:text-xl lg:text-xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0 tracking-wide text-white px-4 sm:px-0"
                         style={{ 
                           fontFamily: 'Georgia, serif', 
                           wordSpacing: '0.1em', 
