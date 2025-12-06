@@ -191,7 +191,7 @@ export default function EliteHero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
       >
-        <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-4 sm:py-6">
+        <div className="w-full px-4 sm:px-6 md:px-8 lg:px-16 xl:px-24 py-4 sm:py-6 max-w-[1600px] mx-auto">
           <div className="flex items-center justify-between">
             {/* Logo */}
             <motion.div
