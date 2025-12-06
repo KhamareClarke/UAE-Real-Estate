@@ -1,0 +1,39 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1920" height="1080" fill="#0A1628"/>
+  <!-- Burj Khalifa -->
+  <rect x="960" y="100" width="40" height="800" fill="#1E3A5F"/>
+  <rect x="940" y="200" width="80" height="700" fill="#1E3A5F"/>
+  <rect x="930" y="300" width="100" height="600" fill="#1E3A5F"/>
+  <rect x="920" y="400" width="120" height="500" fill="#1E3A5F"/>
+  <rect x="900" y="500" width="160" height="400" fill="#1E3A5F"/>
+  <!-- Other Buildings -->
+  <rect x="400" y="400" width="100" height="500" fill="#1E3A5F"/>
+  <rect x="550" y="450" width="80" height="450" fill="#1E3A5F"/>
+  <rect x="680" y="350" width="120" height="550" fill="#1E3A5F"/>
+  <rect x="850" y="500" width="70" height="400" fill="#1E3A5F"/>
+  <rect x="1100" y="450" width="90" height="450" fill="#1E3A5F"/>
+  <rect x="1240" y="380" width="110" height="520" fill="#1E3A5F"/>
+  <rect x="1400" y="500" width="80" height="400" fill="#1E3A5F"/>
+  <rect x="1530" y="420" width="100" height="480" fill="#1E3A5F"/>
+  <!-- Windows -->
+  <rect x="410" y="420" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="450" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="480" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="510" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="540" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="570" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="600" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="630" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="660" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="690" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="720" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="750" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="780" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="810" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="840" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <rect x="410" y="870" width="80" height="10" fill="#F0F0F0" fill-opacity="0.2"/>
+  <!-- Water -->
+  <rect x="0" y="900" width="1920" height="180" fill="#1E3A5F"/>
+  <!-- Text -->
+  <text x="960" y="1040" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Dubai Skyline Placeholder - Replace with actual image</text>
+</svg>

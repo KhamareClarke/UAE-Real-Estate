@@ -1,0 +1,10 @@
+This is a placeholder file. Please replace with an actual Dubai skyline image.
+
+Recommended specifications:
+- High-resolution (at least 1920x1080px)
+- Skyline view of Dubai showing Burj Khalifa
+- Preferably during sunset/blue hour
+- JPG or WebP format
+- File size optimized (under 500KB)
+
+Rename this file to dubai-skyline.jpg after adding the actual image.
