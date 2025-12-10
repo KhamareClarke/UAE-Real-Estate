@@ -1,0 +1,373 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Import Premium Fonts - Airport Style */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  html {
+    @apply antialiased scroll-smooth;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    @apply text-gray-900 bg-white;
+    font-family: 'Montserrat', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile-specific fixes */
+  @media (max-width: 640px) {
+    body {
+      font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    input, select, textarea, button {
+      font-size: 16px !important; /* Prevents zoom on iOS */
+    }
+  }
+  
+  /* Hero video zoom fix */
+  video {
+    transform: scale(1) !important;
+    object-fit: cover !important;
+    object-position: center center !important;
+  }
+  
+  /* Ensure no horizontal scroll */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* Touch-friendly tap targets */
+  button, a {
+    -webkit-tap-highlight-color: rgba(255, 106, 0, 0.2);
+    tap-highlight-color: rgba(255, 106, 0, 0.2);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  /* Premium Text Gradients */
+  .text-gradient-primary {
+    background: linear-gradient(135deg, #FF6B00 0%, #FF8533 50%, #FF6B00 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #FF6B00; /* Fallback */
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #D4AF37 0%, #F4E9C8 50%, #D4AF37 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #D4AF37; /* Fallback */
+  }
+  
+  .text-gradient-luxury {
+    background: linear-gradient(135deg, #F59E0B 0%, #FBBF24 50%, #F59E0B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: #F59E0B; /* Fallback */
+  }
+  
+  /* Premium Backgrounds */
+  .bg-gradient-radial-primary {
+    background: radial-gradient(circle at top, rgba(255, 107, 0, 0.1) 0%, transparent 70%);
+  }
+  
+  .bg-gradient-mesh {
+    background: 
+      radial-gradient(at 27% 37%, rgba(255, 107, 0, 0.08) 0px, transparent 50%),
+      radial-gradient(at 97% 21%, rgba(212, 175, 55, 0.08) 0px, transparent 50%),
+      radial-gradient(at 52% 99%, rgba(255, 107, 0, 0.05) 0px, transparent 50%),
+      radial-gradient(at 10% 29%, rgba(212, 175, 55, 0.05) 0px, transparent 50%);
+  }
+  
+  /* Glass Effects */
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-xl border border-white/20 shadow-2xl;
+  }
+  
+  .glass-dark {
+    @apply bg-black/40 backdrop-blur-xl border border-white/10;
+  }
+  
+  /* Premium Shadows */
+  .shadow-glow-primary {
+    box-shadow: 0 0 60px rgba(255, 107, 0, 0.3), 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shadow-glow-gold {
+    box-shadow: 0 0 60px rgba(212, 175, 55, 0.3), 0 20px 40px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text Effects */
+  .text-shadow-glow {
+    text-shadow: 0 0 30px rgba(255, 107, 0, 0.5);
+  }
+  
+  .text-shadow-luxury {
+    text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Premium Borders */
+  .border-gradient {
+    border: 2px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+                linear-gradient(135deg, rgba(255, 107, 0, 0.5), rgba(212, 175, 55, 0.5)) border-box;
+  }
+  
+  /* Smooth Transitions */
+  .transition-luxury {
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .transition-cinematic {
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  /* Cinematic Text Effects */
+  .text-cinematic {
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 107, 0, 0.3);
+  }
+  
+  /* 3D Perspective */
+  .perspective-dramatic {
+    perspective: 2000px;
+    transform-style: preserve-3d;
+  }
+  
+  /* Vignette Effect */
+  .vignette {
+    position: relative;
+  }
+  
+  .vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+  }
+}
+
+/* Premium Color Variables */
+:root {
+  --color-accent: #F97316;
+  --color-accent-light: #FB923C;
+  --color-accent-dark: #EA580C;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F4E9C8;
+  --color-platinum: #E5E4E2;
+  
+  /* Premium Gradients */
+  --gradient-primary: linear-gradient(135deg, #FF6B00 0%, #FF8533 100%);
+  --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F4E9C8 100%);
+  --gradient-luxury: linear-gradient(135deg, #1A2B3F 0%, #0F1825 100%);
+  --gradient-sunset: linear-gradient(135deg, #FF6B00 0%, #D4AF37 50%, #FF6B00 100%);
+}
+
+/* Premium Button Styles */
+.btn-primary {
+  @apply bg-gradient-to-r from-primary-500 via-primary-600 to-primary-700;
+  @apply text-white font-bold px-8 py-4 rounded-xl;
+  @apply shadow-xl shadow-primary-500/30;
+  @apply hover:shadow-2xl hover:shadow-primary-500/50;
+  @apply transform hover:scale-105 active:scale-95;
+  @apply transition-all duration-300 ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+  left: 100%;
+}
+
+/* Premium Card Hover */
+.card-premium {
+  @apply transition-all duration-500 ease-out;
+  @apply hover:shadow-2xl hover:-translate-y-2;
+}
+
+/* Animated Gradient Background */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.bg-animated-gradient {
+  background: linear-gradient(270deg, #FF6B00, #D4AF37, #FF8533);
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Cinematic Animations */
+@keyframes cinematic-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+@keyframes cinematic-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cinematic-zoom {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes dramatic-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(255, 107, 0, 0.3), 0 0 40px rgba(212, 175, 55, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(255, 107, 0, 0.6), 0 0 80px rgba(212, 175, 55, 0.4);
+  }
+}
+
+@keyframes parallax-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes spotlight {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+/* Cinematic Classes */
+.cinematic-entrance {
+  animation: cinematic-fade-in 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.cinematic-slide {
+  animation: cinematic-slide-up 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.cinematic-zoom {
+  animation: cinematic-zoom 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.dramatic-glow {
+  animation: dramatic-glow 3s ease-in-out infinite;
+}
+
+.parallax-float {
+  animation: parallax-float 6s ease-in-out infinite;
+}
+
+/* Cinematic Overlay */
+.cinematic-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.cinematic-overlay::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  animation: spotlight 8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Letterbox Effect - Removed black lines */
+.letterbox {
+  position: relative;
+}
+
+/* Removed the ::before and ::after pseudo-elements that were creating black lines */
+
+/* Depth of Field Blur */
+.depth-blur {
+  position: relative;
+}
+
+.depth-blur::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0, 0, 0, 0.1) 100%);
+  pointer-events: none;
+}
